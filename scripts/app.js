@@ -1,9 +1,3 @@
-module.exports = function(bot) {
-	 bot.hear(/That's Cold/, function(res) {
-   		return res.send("...");
- 	});
-}
-
 var jsMeme = [
   "https://jordankasper.com/js-testing/images/meme-functions.jpg",
   "http://s2.quickmeme.com/img/bf/bfd0455c2d86e15a9982534d90f8859a08be8f74062fff46e07e00ca7fbbdd1f.jpg",
@@ -14,13 +8,23 @@ var jsMeme = [
   "http://m.memegen.com/bvnpsq.jpg"
 ]
 
+
+
 module.exports = function(bot) {
+	 bot.hear(/That's Cold/, function(res) {
+   		return res.send("...");
+ 	});
+
+
+
+
+
 	bot.hear(/meme/, function(res) {
 		return res.send(res.random(jsMeme));
 	});
-}
 
-module.exports = function(bot) {
+
+
 	 bot.hear(/kamusta/, function(res) {
    		return res.send("mabuti naman po");
  	});
