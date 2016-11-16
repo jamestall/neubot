@@ -17,8 +17,5 @@ var squirrels = [
 module.exports = function(bot) {
 	bot.hear(/squirrels!/, function(res) {
 		return res.send(res.random(squirrels));
-	})
+	});
 }
-module.exports = (robot) ->
-  robot.hear /ship it/i, (msg) ->
-    msg.send msg.random squirrels
