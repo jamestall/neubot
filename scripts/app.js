@@ -29,18 +29,7 @@ module.exports = function(bot) {
 
 	//ARITHMETIC OPERATORS
 	bot.hear(/arithmetic/, function(res) {
-		return res.send(
-			"+ 	add (also concatenates strings)"
-			"- 	subtract"
-			"* 	multiply"
-			"/ 	divide"
-			"% 	modulus (returns the remainder)"
-			"+=	adds number to a variable and assigns the result to the variable"
-			"-= 	subtracts number from a variable and assigns the result to the variable"
-			"*=	multiplies number with a variable and assigns the result to the variable"
-			"/=  divides number from a variable and assigns the result to the variable"
-			"++	increments up"
-			"--	increments down")
+		return res.send("+ 	add ~ also concatenates strings /n- 	subtract /n* 	multiply /n/ 	divide /n% 	modulus (returns the remainder)	/n+=	adds number to a variable and assigns the result to the variable /n-= 	subtracts number from a variable and assigns the result to the variable /n*=	multiplies number with a variable and assigns the result to the variable /n/=  divides number from a variable and assigns the result to the variable /n++	increments up /n--	increments down");
 	});
 }
 
