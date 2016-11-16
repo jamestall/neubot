@@ -4,18 +4,24 @@ module.exports = function(bot) {
  	});
 }
 
-var squirrels = [
-  "http://cl.ly/1i0s1r3t2s2G3P1N3t3M/Screen_Shot_2011-10-27_at_9.36.45_AM.png",
-  "http://shipitsquirrel.github.com/images/squirrel.png",
-  "https://media.giphy.com/media/143vPc6b08locw/giphy.gif",
-  "http://i.imgur.com/DPVM1.png",
-  "http://s2.quickmeme.com/img/e0/e07b5437703f88eb4229adc1c6931061d4c5557f761c048dac3d12f9b8e4846a.jpg",
-  "http://s.quickmeme.com/img/9a/9a0066a21027716e7b0b5b900f3c2af295fdcad706ea6836fcb58efdeb261c8e.jpg",
-  "http://i.memecaptain.com/gend_images/zyCwXg.jpg"
+var jsMeme = [
+  "https://jordankasper.com/js-testing/images/meme-functions.jpg",
+  "http://s2.quickmeme.com/img/bf/bfd0455c2d86e15a9982534d90f8859a08be8f74062fff46e07e00ca7fbbdd1f.jpg",
+  "https://files.managewp.org/js_nan_meme-320x200.jpg",
+  "http://cf.chucklesnetwork.com/items/7/4/9/7/3/original/yo-dawg-we-herd-you-liek-javascript-so-we-put-some-js-in-your-js.jpg",
+  "http://s.quickmeme.com/img/7e/7e12f2bf903bcb56c97fb18a86cc3f5f0429730f40aa92595acab1905abe2b4c.jpg",
+  "http://www.developermemes.com/wp-content/uploads/2014/07/Wastes-2-Hours-Debugging-Broken-Javascript-Missing-A-Curly-Brace-Developer-Meme.jpg",
+  "http://m.memegen.com/bvnpsq.jpg"
 ]
 
 module.exports = function(bot) {
-	bot.hear(/squirrels!/, function(res) {
-		return res.send(res.random(squirrels));
+	bot.hear(/js/, function(res) {
+		return res.send(res.random(jsMeme));
 	});
+}
+
+module.exports = function(bot) {
+	 bot.hear(/kamusta/, function(res) {
+   		return res.send("mabuti naman po");
+ 	});
 }
