@@ -15,7 +15,7 @@ var jsMeme = [
 ]
 
 module.exports = function(bot) {
-	bot.hear(/js/, function(res) {
+	bot.hear(/meme/, function(res) {
 		return res.send(res.random(jsMeme));
 	});
 }
