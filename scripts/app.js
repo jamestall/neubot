@@ -9,23 +9,44 @@ var jsMeme = [
 ]
 
 
-
 module.exports = function(bot) {
+	//That's cold
 	 bot.hear(/That's Cold/, function(res) {
    		return res.send("...");
  	});
 
-
-
-
-
+	//Meme randomizer
 	bot.hear(/meme/, function(res) {
 		return res.send(res.random(jsMeme));
 	});
 
-
-
-	 bot.hear(/kamusta/, function(res) {
+	//Listen for kamusta
+	bot.hear(/kamusta/, function(res) {
    		return res.send("mabuti naman po");
  	});
+	
+	//JS Notes
+
+	//ARITHMETIC OPERATORS
+	bot.hear(/arithmetic/, function(res) {
+		return res.send(
+			"+ 	add (also concatenates strings)"
+			"- 	subtract"
+			"* 	multiply"
+			"/ 	divide"
+			"% 	modulus (returns the remainder)"
+			"+=	adds number to a variable and assigns the result to the variable"
+			"-= 	subtracts number from a variable and assigns the result to the variable"
+			"*=	multiplies number with a variable and assigns the result to the variable"
+			"/=  divides number from a variable and assigns the result to the variable"
+			"++	increments up"
+			"--	increments down")
+	});
 }
+
+
+
+
+
+
+
