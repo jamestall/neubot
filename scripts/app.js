@@ -22,6 +22,113 @@ var aritemticOperators = [
 	"--	increments down"
 ]
 
+var comparisonOperators = [
+	">	greater than",
+	">=	greater than or equal to",
+	"<	less than",
+	"<=	less than or equal to",
+	"===	strict equal (use this)",
+	"==	coercive equal (AVOID)",
+	"!== strict not equal (use this)",
+	"!=	coercive not equal ()"
+]
+
+var logicalOperators = [
+	"&&	and 	Returns *true* when both left and right values are true",
+	"||	or 		Returns *true* when at least one of the lef or right values is true",
+	"!	not 	Takes a single value and returns the opposite Boolean value"
+]
+
+var specialNumberOperators = [
+	"Math.pow(m,n)	Returns m to the power of n",
+	"Math.sqrt(n) 	Returns the square root of n",
+	"Math.random()	Returns a random number between 0 (inclusive) and 1 (exclusive)",
+	"Math.floor(n)	Returns largest interger less than or equal to n",
+	"Math.ceil(n)	Returns smallest integer greater than or equal to n"
+]
+
+var basicFunctions = [
+	"toString() 	Transforms value into a string",
+	"typeof()	Returns a string with a data type of the data you pass into it"
+
+]
+
+
+var properties = [
+	".length		Returns the length of the array"
+]
+
+var variables = [
+	"var    instantiates a variable",
+	"let ",
+	"const"
+]
+
+var arrayHelperMethods = [
+	"toString()					Returns a single string consisting of the array elements converted to strings and separated by commas",
+	"join()						Same as toString(), but allows you to pass a custome separator as an argument",
+	"pop()						Removes and returns the last item",
+	"push(item1, ..., itemN)	Adds one or more items to the end of the array",
+	"reverse()					Reverses the array",
+	"shift()					Removes an returns the first item",
+	"unshift(item1, ..., itemN) adds one or more items to the start of an array"
+]
+
+var arrayIteratorMethods = [
+	"forEach()	Performs specified actions on each element in an array",
+	"every()	Tests whether all elements in the arrya pass a test ",
+	"some()		Tests whether some element in the array passes the text implemented by the provided function",
+	"filter()	Creates a new array witha ll the elements that pass the test that pass the test implemented by the function",
+	"map()		Creates a new array with results of calling a provided function on every element in this array"
+]
+
+var loops = [
+	"while		A loop statement that runs while a condition is true",
+	"do/while	A loop statment similar to while, but ensures that the code block is executed at least once",
+	"for 		A loop statement that 1. declares variable for the itterator, 2. value condition, 3. increment",
+	"forEach		Method specific to arrays, but similar to the for statement",
+	"				-Lets you specify a function to execute for each array element",
+	"				-EXMAScript 5 and later, so not supported by older browsers (IE8!)"
+
+]
+
+var conditionals = [
+	"if (condition) {",
+	"//code",
+	"}",
+	" ",
+	"if (condition) {",
+	"	//code",
+	"} else {",
+	"	//code",
+	"}",
+	" ",
+	"if (condition) {",
+	"	//code",
+	"} else if (another condition) {",
+	"	//code",
+	"} else if (another condition) {",
+	"	//code",
+	"} else {",
+	"	//code",
+	"}",
+	" ",
+	"(expression) ? trueCode : falseCode;",
+	"	// var allowed = (age > 18) ? `yes` : `no`;"
+]
+
+var booleans = [
+	"false",
+	"true",
+	"falsy (when converted to boolean it will = false)",
+	"	possible values =	`false`, 0,	``,	NaN, null",
+	"Truthy (when converted to boolean it will = true)",
+	"	everything else besides falsy values"
+]
+
+
+
+
 module.exports = function(bot) {
 	//That's cold
 	 bot.hear(/That's Cold/, function(res) {
@@ -40,10 +147,68 @@ module.exports = function(bot) {
 	
 	//JS Notes
 
-	//ARITHMETIC OPERATORS
+	//Arithmetic operators
 	bot.hear(/arithmetic/, function(res) {
 		return res.send(aritemticOperators);
 	});
+
+	//Comparison operators
+	bot.hear(/comparison/, function(res) {
+		return res.send(comparisonOperators);
+	});
+
+	//Logical operators
+	bot.hear(/logical/, function(res) {
+		return res.send(logicalOperators);
+	});
+
+	//Special number operators
+	bot.hear(/number/, function(res) {
+		return res.send(specialNumberOperators);
+	});
+
+	//Basic Functions
+	bot.hear(/functions/, function(res) {
+		return res.send(basicFunctions);
+	});
+
+	//Basic Properties
+	bot.hear(/properties/, function(res) {
+		return res.send(properties);
+	});
+
+	//Variables
+	bot.hear(/variables/, function(res) {
+		return res.send(variables);
+	});
+
+	//Array helper methods
+	bot.hear(/array helper/, function(res) {
+		return res.send(arrayHelperMethods);
+	});
+
+	//Array iterator methods
+	bot.hear(/array iterator/, function(res) {
+		return res.send(arrayIteratorMethods);
+	});
+
+	//Loops
+	bot.hear(/loops/, function(res) {
+		return res.send(loops);
+	});
+
+	//Conditionals
+	bot.hear(/conditionals/, function(res) {
+		return res.send(conditionals);
+	});
+
+	//Logical operators
+	bot.hear(/booleans/, function(res) {
+		return res.send(booleans);
+	});
+
+
+
 }
 
 
