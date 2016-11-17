@@ -126,13 +126,14 @@ var booleans = [
 	"	everything else besides falsy values"
 ]
 
+var iceCold = "Ice Cold";
 
 
 
 module.exports = function(bot) {
 	//That's cold
 	 bot.hear(/That's Cold/, function(res) {
-   		return res.send("...");
+   		return res.send(iceCold);
  	});
 
 	//Meme randomizer
