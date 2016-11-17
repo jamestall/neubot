@@ -200,7 +200,7 @@ module.exports = function(bot) {
 
 	//Conditionals
 	bot.hear(/conditionals/, function(res) {
-		return res.send(conditionals);
+		return res.send(conditionals[]);
 	});
 
 	//Logical operators
