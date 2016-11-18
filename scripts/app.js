@@ -208,7 +208,7 @@ module.exports = function(bot) {
 		for (var i = booleans.length - 1; i >= 0; i--) {
 		 	res.send(booleans[i]);
 		 } 
-		return res.send("Booleans");
+		return res.send("*Booleans*");
 	});
 
 
