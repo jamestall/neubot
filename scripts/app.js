@@ -255,7 +255,7 @@ module.exports = function(bot) {
 	});
 
 	//Help Me!
-	bot.hear(/help me/, function(res) {
+	bot.hear(/tell me/, function(res) {
 		for (var i = helpMe.length - 1; i >= 0; i--) {
 		 	res.send(helpMe[i]);
 		 } 
