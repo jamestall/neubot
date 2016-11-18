@@ -150,57 +150,87 @@ module.exports = function(bot) {
 
 	//Arithmetic operators
 	bot.hear(/arithmetic/, function(res) {
-		return res.send(arithemticOperators);
+		for (var i = arithemticOperators.length - 1; i >= 0; i--) {
+		 	res.send(arithemticOperators[i]);
+		} 
+		return res.send("*ARITHMETIC OPERATORS*");
 	});
 
 	//Comparison operators
 	bot.hear(/comparison/, function(res) {
-		return res.send(comparisonOperators);
+		for (var i = comparisonOperators.length - 1; i >= 0; i--) {
+		 	res.send(comparisonOperators[i]);
+		} 
+		return res.send("*COMPARISON OPERATORS*");
 	});
 
 	//Logical operators
 	bot.hear(/logical/, function(res) {
-		return res.send(logicalOperators);
+		for (var i = logicalOperators.length - 1; i >= 0; i--) {
+		 	res.send(logicalOperators[i]);
+		} 
+		return res.send("*LOGICAL OPERATORS*");
 	});
 
 	//Special number operators
 	bot.hear(/number/, function(res) {
-		return res.send(specialNumberOperators);
+		for (var i = specialNumberOperators.length - 1; i >= 0; i--) {
+		 	res.send(specialNumberOperators[i]);
+		} return res.send("*SPECIAL NUMBER OPERATORS*");
 	});
 
 	//Basic Functions
 	bot.hear(/functions/, function(res) {
-		return res.send(basicFunctions);
+		for (var i = basicFunctions.length - 1; i >= 0; i--) {
+		 	res.send(basicFunctions[i]);
+		} return res.send("*BASIC FUNCTIONS*");
 	});
 
 	//Basic Properties
 	bot.hear(/properties/, function(res) {
-		return res.send(properties);
+		for (var i = properties.length - 1; i >= 0; i--) {
+		 	res.send([properties][i]);
+		} return res.send("*PROPERTIES*");
 	});
 
 	//Variables
 	bot.hear(/variables/, function(res) {
-		return res.send(variables);
+		for (var i = variables.length - 1; i >= 0; i--) {
+		 	res.send(variables[i]);
+		} 
+		return res.send("*VARIABLES*");
 	});
 
 	//Array helper methods
 	bot.hear(/array helper/, function(res) {
-		return res.send(arrayHelperMethods);
+		for (var i = arrayHelperMethods.length - 1; i >= 0; i--) {
+		 	res.send(arrayHelperMethods[i]);
+		} 
+		return res.send("*ARRAY HELPER METHODS*");
 	});
 
 	//Array iterator methods
 	bot.hear(/array iterator/, function(res) {
-		return res.send(arrayIteratorMethods);
+		for (var i = arrayIteratorMethods.length - 1; i >= 0; i--) {
+		 	res.send(arrayIteratorMethods[i]);
+		} 
+		return res.send("*ARRAY ITERATOR METHODS*");
 	});
 
 	//Loops
 	bot.hear(/loops/, function(res) {
-		return res.send(loops);
+		for (var i = loops.length - 1; i >= 0; i--) {
+		 	res.send(loops[i]);
+		} 
+		return res.send("*LOOPS*");
 	});
 
 	//Conditionals
 	bot.hear(/conditionals/, function(res) {
-		return res.send(conditionals);
+		for (var i = conditionals.length - 1; i >= 0; i--) {
+		 	res.send(conditionals[i]);
+		} 
+		return res.send("*CONDITIONALS*");
 	});
 
 	//Logical operators
@@ -208,7 +238,7 @@ module.exports = function(bot) {
 		for (var i = booleans.length - 1; i >= 0; i--) {
 		 	res.send(booleans[i]);
 		 } 
-		return res.send("*Booleans*");
+		return res.send("*BOOLEANS*");
 	});
 
 
