@@ -206,7 +206,7 @@ module.exports = function(bot) {
 	//Logical operators
 	bot.hear(/booleans/, function(res) {
 		for (var i = booleans.length - 1; i >= 0; i--) {
-		 	console.log(booleans[i]);
+		 	res.send(booleans[i]);
 		 } 
 		return res.send(" ");
 	});
