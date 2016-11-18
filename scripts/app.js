@@ -128,7 +128,20 @@ var booleans = [
 
 var iceCold = "Ice Cold";
 
-
+var helpMe = [
+"arithmetic 	= 		Arithmetic Operators",
+"comparison		=		Comparison Operators",
+"logical		=		Logical Operators",
+"number			=		Special Number Operators",
+"functions		=		Basic Functions",
+"properties		=		Basic Properties",
+"variables		=		Variables",
+"array helper	=		Array helper methods",
+"array iterator	=		Array iterator methods",
+"loops			=		Loops",
+"conditionals	=		Conditionals",
+"booleans		=		Booleans"
+]
 
 module.exports = function(bot) {
 	//That's cold
@@ -241,7 +254,13 @@ module.exports = function(bot) {
 		return res.send("*BOOLEANS*");
 	});
 
-
+	//Help Me!
+	bot.hear(/help me/, function(res) {
+		for (var i = helpMe.length - 1; i >= 0; i--) {
+		 	res.send(helpMe[i]);
+		 } 
+		return res.send("Say this...			and I'll tell you about...");
+	});
 
 }
 
