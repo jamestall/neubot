@@ -8,7 +8,7 @@ var jsMeme = [
   "http://m.memegen.com/bvnpsq.jpg"
 ]
 
-var aritemticOperators = [
+var arithemticOperators = [
 	"+ 	add (also concatenates strings)",
 	"- 	subtract",
 	"* 	multiply",
@@ -150,7 +150,7 @@ module.exports = function(bot) {
 
 	//Arithmetic operators
 	bot.hear(/arithmetic/, function(res) {
-		return res.send(aritemticOperators);
+		return res.send(arithemticOperators);
 	});
 
 	//Comparison operators
@@ -200,7 +200,7 @@ module.exports = function(bot) {
 
 	//Conditionals
 	bot.hear(/conditionals/, function(res) {
-		return res.send(conditionals[]);
+		return res.send(conditionals);
 	});
 
 	//Logical operators
