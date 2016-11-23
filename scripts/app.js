@@ -273,7 +273,7 @@ module.exports = function(bot) {
 	});
 
 	//9gag code
-	return robot.respond(/9gag( me)?/i, function(message) {
+	return bot.respond(/9gag( me)?/i, function(message) {
     return send_meme(message, false, function(title, src) {
       return message.send(title, src);
     });
