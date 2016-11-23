@@ -296,9 +296,9 @@ module.exports = function(bot) {
 
 
 
-  return bot.hear(/it['’]?s a trap\b/i, function(msg) {
-    return msg.send(msg.random(ackbars));
-  });
+  // return bot.hear(/it['’]?s a trap\b/i, function(msg) {
+  //   return msg.send(msg.random(ackbars));
+  // });
 
 
 	//9gag code
