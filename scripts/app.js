@@ -300,6 +300,9 @@ module.exports = function(bot) {
   //   return msg.send(msg.random(ackbars));
   // });
 
+	bot.hear(/it['’]?s a trap\b/, function(res) {
+		return res.send(res.random(ackbars));
+	});
 
 	//9gag code
 	return bot.respond(/9gag( me)?/i, function(message) {
