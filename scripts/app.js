@@ -142,7 +142,7 @@ var helpMe = [
 "array iterator	=		Array iterator methods",
 "loops			=		Loops",
 "conditionals	=		Conditionals",
-"booleans		=		Booleans"
+"booleans		=		Booleans",
 "meme			=		memes!"
 ]
 
