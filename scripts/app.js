@@ -143,6 +143,7 @@ var helpMe = [
 "loops			=		Loops",
 "conditionals	=		Conditionals",
 "booleans		=		Booleans"
+"meme			=		memes!"
 ]
 
 //setup for 9gag
